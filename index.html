@@ -17,19 +17,25 @@
 </head>
 
 <body>
+
+    <!-- full container -->
     <div class="row text-center container-fluid">
 
+        <!-- header -->
         <div class="card col-12 header shadow  ">
 
             <div class="card-header border bg-light ">
                 <h1>Weather Dashboard</h1>
             </div>
 
+            <!-- cardbody -->
             <div class="row card-body">
+                <!-- search column -->
                 <div class="col-3 border p-3 text-justify">
                     <h6 id="search-h5">Get Weather from any City:</h6>
                     <form class="form-inline">
-                        <input id="city-input" class="form-control mr-sm-2" type="search" placeholder="Search City" aria-label="Search">
+                        <input id="city-input" class="form-control mr-sm-2" type="search" placeholder="Search City"
+                            aria-label="Search">
                         <button id="search-btn-city" class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i
                                 class="fas fa-search-location"></i></button>
                     </form>
@@ -38,17 +44,23 @@
                         <p>CityPlaceholder</p>
                     </div>
                 </div>
+                <!-- results column -->
                 <div class="col-9 border">
+                    <!-- current weather row -->
                     <div class="row border text-justify" id="current-results">
                         <div class="col-12">
                             <h2 id="city-header"></h2>
+                            <h6 id="city-header-date"></h6>
+                        
                         </div>
                     </div>
+                    <!-- forecast header row -->
                     <div class="row border text-justify" id="forecast-header">
                         <div class="col-12">
                             <h4>5-Day Forecast:</h4>
                         </div>
                     </div>
+                    <!-- forecast row -->
                     <div class="row border text-justify" id="forecast-results">
                         <div class="col border forecast-day">
                             <p>Test</p>
@@ -73,18 +85,25 @@
         </div>
 
         <!-- Scripts -->
+
+        <!-- moment.js -->
+        <script type="text/javascript" src="./moment.js"></script>
         <script src="https://kit.fontawesome.com/54ad83eef7.js" crossorigin="anonymous"></script>
+        <!-- jquery slim min for bootstrap -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
+        <!-- jquery min for everythig else -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- popper & bootstrap -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <!-- local script -->
         <script src="./script.js"></script>
 </body>
 
