@@ -1,5 +1,6 @@
 body {
 margin: 55px;
+background-color: rgb(255, 253, 140);
 }
 
 .header{
@@ -28,4 +29,8 @@ margin: 55px;
     padding-top:10px;
     padding-bottom:10px;
 
+}
+
+.forecast-day{
+    padding: 5px;
 }
