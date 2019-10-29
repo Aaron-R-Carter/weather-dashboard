@@ -19,19 +19,19 @@
 <body>
 
     <!-- full container -->
-    <div class="row text-center container-fluid">
+    <div class="row main-contain text-center container-fluid border border-dark rounded">
 
         <!-- header -->
         <div class="card col-12 header shadow  ">
 
-            <div class="card-header border bg-light ">
+            <div class="card-header border bg-dark text-light ">
                 <h1>Weather Dashboard</h1>
             </div>
 
             <!-- cardbody -->
             <div class="row card-body">
                 <!-- search column -->
-                <div class="col-3 border p-3 text-justify">
+                <div class="col-3 p-3 text-justify">
                     <h6 id="search-h5">Get Weather from any City:</h6>
                     <form class="form-inline">
                         <input id="city-input" class="form-control mr-sm-2" type="search" placeholder="Search City"
@@ -45,29 +45,29 @@
                     </div>
                 </div>
                 <!-- results column -->
-                <div class="col-9 border">
+                <div id="todays-weather-container" class="col-9 ">
                     <!-- current weather row -->
-                    <div class="row border text-justify" id="current-results">
-                        <div class="col-12">
+                    <div class="row text-justify" >
+                        <div class="col-12 border shadow" id="current-results">
                             
                             <h2 id="city-header"> Where to?</h2>
                             <h6 id="city-header-date"></h6>
                             <hr>
                             <p id="temperature"> Temperature:</p><br>
-                            <p id="Humidity"> Humidity:</p><br>
-                            <p id="Wind Speed"> Wind Speed:</p><br>
-                            <p id="UV Index"> UV Index:</p><br>
+                            <p id="humidity"> Humidity:</p><br>
+                            <p id="wind-speed"> Wind Speed:</p><br>
+                            <p id="uv-index"> UV Index:</p><br>
                         
                         </div>
                     </div>
                     <!-- forecast header row -->
-                    <div class="row border text-justify" id="forecast-header">
+                    <div class="row text-justify" id="forecast-header">
                         <div class="col-12">
                             <h4>5-Day Forecast:</h4>
                         </div>
                     </div>
                     <!-- forecast row -->
-                    <div class="row border text-justify" id="forecast-results">
+                    <div class="row text-justify" id="forecast-results">
                         <div class="col border forecast-day">
                             <p>Test</p>
                         </div>

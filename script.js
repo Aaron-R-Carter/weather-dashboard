@@ -16,7 +16,13 @@ $("#search-btn-city").on("click", function (event) {
     // variables for city input 
     var city = $("#city-input").val();
     var cityQueryUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+
+    // divs 
     var cityHeader = $("#city-header");
+    var temperatureDiv = $("#temperature");
+    var humidityDiv = $("#humidity");
+    var windSpeedDiv = $("#wind-speed");
+    var uvIndexDiv = $("#uv-index");
 
     // ajax call for weather api data
 
@@ -27,9 +33,17 @@ $("#search-btn-city").on("click", function (event) {
 
         // clear previous search results 
         cityHeader.empty();
+        temperatureDiv.empty();
+        windSpeedDiv.empty();
+        uvIndexDiv.empty();
+        
 
         // add results to page using from response object
         cityHeader.text(response.name);
+        temperatureDiv.text(`Temperature: ${Math.floor(response.main.temp)} °F`);
+        humidityDiv.text(`Humidity: ${response.main.humidity} %`);
+        windSpeedDiv.text(`Wind Speed: ${Math.floor(response.wind.speed)} mph`);
+        uvIndexDiv.text(response)
 
         console.log(response);
     })
@@ -37,14 +51,6 @@ $("#search-btn-city").on("click", function (event) {
 
 
 
-
-    // // Transfer content to HTML
-    // $(".city").html("<h1>" + response.name + " Weather Details</h1>");
-    // $(".wind").text("Wind Speed: " + response.wind.speed);
-    // $(".humidity").text("Humidity: " + response.main.humidity);
-    // $(".temp").text("Temperature (F) " + response.main.temp);
-
  
 
  
-
