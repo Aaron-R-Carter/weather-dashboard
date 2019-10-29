@@ -5,10 +5,9 @@ var apiKey = "b735a815d875a14bc44e6e62c26375b9";
 function todaysDate() {
     var todaysDate = moment().format("MMMM Do YYYY");
     $("#city-header-date").append(`<div>${todaysDate}</div>`);
+    
 }
-
-//run date function
-
+todaysDate();
 
 // city search button click event function
 $("#search-btn-city").on("click", function (event) {
@@ -31,7 +30,6 @@ $("#search-btn-city").on("click", function (event) {
 
         // add results to page using from response object
         cityHeader.text(response.name);
-        todaysDate();
 
         console.log(response);
     })
