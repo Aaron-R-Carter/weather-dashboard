@@ -1,0 +1,17 @@
+body {
+margin: 55px;
+}
+
+.header{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#search-h5{
+    margin-top: 10px;
+  
+}
+
+#results{
+    margin-top:10px;
+}

@@ -17,21 +17,54 @@
 </head>
 
 <body>
-    <h1>Weather Dashboard</h1>
+    <div class="row text-center">
+
+        <div class="card col-12 header shadow  ">
+
+            <div class="card-header border bg-light ">
+                <h1>Weather Dashboard</h1>
+            </div>
+
+            <div class="row card-body">
+                <div class="col-4 border p-3 text-justify">
+                    <h5 id="search-h5">Get Weather from any City:</h5>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search City" aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search-location"></i></button>
+                    </form>
+                    <br>
+                    <div id="search-results-city">
+                        <p>Placeholder</p>
+                    </div>
+                </div>
+                <div class="col-8 border" >
+                    <div class="row" id="results">
+                        <div class="col-12">
+                            <p>test</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
 
 
-    <!-- Scripts -->
-    <script src="https://kit.fontawesome.com/54ad83eef7.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+
+
+
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/54ad83eef7.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
 </body>
 
 </html>
