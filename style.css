@@ -15,3 +15,11 @@ margin: 55px;
 #results{
     margin-top:10px;
 }
+
+#current-results{
+    padding: 5px;
+}
+
+#forecast-results{
+    padding: 5px;
+}
