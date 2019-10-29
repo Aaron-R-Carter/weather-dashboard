@@ -29,8 +29,8 @@
                 <div class="col-3 border p-3 text-justify">
                     <h6 id="search-h5">Get Weather from any City:</h6>
                     <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search City" aria-label="Search">
-                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i
+                        <input id="city-input" class="form-control mr-sm-2" type="search" placeholder="Search City" aria-label="Search">
+                        <button id="search-btn-city" class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i
                                 class="fas fa-search-location"></i></button>
                     </form>
                     <br>
@@ -41,11 +41,11 @@
                 <div class="col-9 border">
                     <div class="row border text-justify" id="current-results">
                         <div class="col-12">
-                            <p>Test</p>
+                            <h2 id="city-header"></h2>
                         </div>
                     </div>
                     <div class="row border text-justify" id="forecast-header">
-                        <div class ="col-12">
+                        <div class="col-12">
                             <h4>5-Day Forecast:</h4>
                         </div>
                     </div>
@@ -72,16 +72,13 @@
 
         </div>
 
-
-
-
-
         <!-- Scripts -->
         <script src="https://kit.fontawesome.com/54ad83eef7.js" crossorigin="anonymous"></script>
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
