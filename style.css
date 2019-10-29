@@ -23,3 +23,9 @@ margin: 55px;
 #forecast-results{
     padding: 5px;
 }
+
+#forecast-header{
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
